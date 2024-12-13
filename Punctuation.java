@@ -77,6 +77,6 @@ public class Punctuation {
         }
     }
     public static boolean checkForPunctuation(String word) {
-        return word.matches(".*[\\p{Punct}].*"); //found in google #2
+        return word.matches(".*[\\p{Punct}].*"); //matches(".*[\\p{Punct}].*") found in google #2
     }
 }
