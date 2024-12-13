@@ -66,7 +66,7 @@ public class Punctuation {
 
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
-            if (Character.isWhitespace(c) || i == text.length() - 1) { //isWhitespace found in google
+            if (Character.isWhitespace(c) || i == text.length() - 1) {
                 if (currentWord.length() > 0 && checkForPunctuation(currentWord)) {
                     System.out.println(currentWord);
                 }
@@ -77,6 +77,6 @@ public class Punctuation {
         }
     }
     public static boolean checkForPunctuation(String word) {
-        return word.matches(".*[\\p{Punct}].*"); //matches(".*[\\p{Punct}].*") found in google #2
+        return word.matches(".*[\\p{Punct}].*");
     }
 }
